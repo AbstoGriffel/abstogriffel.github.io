@@ -500,10 +500,10 @@ b {
       font-weight: 800;
       line-height: 1.3; }
       .slider-title h1 {
-        font-size: 30px; }
+        font-size: 24px; }
         @media screen and (min-width: 320px) {
           .slider-title h1 {
-            font-size: calc(30px + 50 * ((100vw - 320px) / 880)); } }
+            font-size: calc(24px + 56 * ((100vw - 320px) / 880)); } }
         @media screen and (min-width: 1200px) {
           .slider-title h1 {
             font-size: 80px; } }
@@ -618,6 +618,11 @@ b {
     align-items: stretch;
     justify-content: center;
     flex-wrap: wrap; }
+    @media (max-width: 768px) {
+      #counselling > .counsel-select {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px 25px 0; } }
     #counselling > .counsel-select .age, #counselling > .counsel-select .level, #counselling > .counsel-select .wish {
       display: flex;
       flex-grow: 1;
@@ -638,6 +643,9 @@ b {
       flex-grow: 0;
       padding: 10px 20px;
       margin-left: 30px; }
+      @media (max-width: 768px) {
+        #counselling > .counsel-select > .btn-cta {
+          margin: 0; } }
       #counselling > .counsel-select > .btn-cta a {
         font-family: 'Roboto', sans-serif;
         font-weight: 900;
@@ -888,6 +896,8 @@ b {
     text-align: center;
     color: #fff;
     padding: 40px 0px; }
+  #testimonial .owl-stage {
+    padding: 30px 0; }
   #testimonial .item {
     width: 80%;
     height: 300px;
@@ -915,6 +925,7 @@ b {
         #testimonial .item .cmt {
           padding-top: 15px;
           padding-left: 0px;
+          margin-right: 0;
           align-items: center;
           width: 100%;
           text-align: center; } }
@@ -931,7 +942,8 @@ b {
       @media (max-width: 768px) {
         #testimonial .item .ava {
           width: 100px;
-          height: 100px; } }
+          height: 100px;
+          margin: 0; } }
     #testimonial .item .name {
       font-style: italic;
       font-weight: 400; }

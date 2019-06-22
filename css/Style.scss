@@ -599,7 +599,7 @@ b {
 			font-size: 80px;
 			font-weight: 800;
 			line-height: 1.3;
-			@include fluid-type($min_width, $max_width, 30px, 80px);
+			@include fluid-type($min_width, $max_width, 24px, 80px);
 		}
 		& > h2 {
 			@include font(h2);
@@ -713,6 +713,11 @@ b {
 		align-items: stretch;
 		justify-content: center;
 		flex-wrap: wrap;
+		@include mobile {
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 15px 25px 0;
+		}
 		.age, .level, .wish {
 			display: flex;
 			flex-grow: 1;
@@ -734,6 +739,9 @@ b {
 				flex-grow: 0;
 				padding: 10px 20px;
 				margin-left: 30px;
+				@include mobile{
+					margin: 0;
+				}
 				a {
 					@include font(button);
 					color: $red;
@@ -982,6 +990,9 @@ b {
 		color: #fff;
 		padding: 40px 0px;
 	}
+	.owl-stage{
+		padding: 30px 0;
+	}
 	.item {
 		width: 80%;
 		height: 300px;
@@ -1006,6 +1017,7 @@ b {
 			@include mobile{
 				padding-top: 15px;
 				padding-left: 0px;
+				margin-right: 0;
 				align-items: center;
 				width: 100%;
 				text-align: center;
@@ -1013,10 +1025,6 @@ b {
 		}
 		.ava {
 			border-radius: 50%;
-			@include mobile {
-				width: 100px;
-				height: 100px;
-			}
 			width: 200px;
 			height: 200px;
 			margin: 30px 30px 60px;
@@ -1025,6 +1033,11 @@ b {
 			border: 0px solid $red;
 			background-size: cover;
 			background-position: center center;
+			@include mobile {
+				width: 100px;
+				height: 100px;
+				margin: 0;
+			}
 		}
 		.name {
 			font-style: italic;
