@@ -9,7 +9,7 @@ $(window).scroll(function() {
 });
 
 		
-$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".thetop").offset().top},"3000");return false})})
+$(function(){$('.scrolltop').click(function(){$("html,body").animate({scrollTop:$(".thetop").offset().top},"3000");return false})})
 
 
 /*------1. Custom selector------*/

@@ -109,6 +109,9 @@ $max_h_font: 42px;
 
 //Navbar
 @mixin nav {
+	@include tablet{
+		.nav-link{padding: 0 0.5rem 0.5rem;}
+	}
 ul {
     margin: 0;
     padding: 10px 0 0;
@@ -241,9 +244,9 @@ button:focus, button:active {
 }
 
 .nav-down{top:0px}
-.nav-up{top:-60px}
-.nav-out{left:-60px}
-.nav-in{left: 0px}
+.nav-up{top:-70px}
+.nav-out{left:-70px}
+.nav-in{left: -5px}
 
 .navbar-container {
   height: 64px;
@@ -996,6 +999,9 @@ b {
 	.item {
 		width: 80%;
 		height: 300px;
+		@include mobile{
+			height: 400px;
+		}
 		display: flex;
 		align-items: center;
 		margin: 0 auto;

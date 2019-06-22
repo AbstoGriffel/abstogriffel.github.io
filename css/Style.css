@@ -39,13 +39,13 @@ button:focus, button:active {
   top: 0px; }
 
 .nav-up {
-  top: -60px; }
+  top: -70px; }
 
 .nav-out {
-  left: -60px; }
+  left: -70px; }
 
 .nav-in {
-  left: 0px; }
+  left: -5px; }
 
 .navbar-container {
   height: 64px;
@@ -106,6 +106,9 @@ button:focus, button:active {
       font-size: 14px;
       color: #BD2E2E;
       font-weight: 800; }
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .navbar-container .nav-link {
+      padding: 0 0.5rem 0.5rem; } }
   .navbar-container ul {
     margin: 0;
     padding: 10px 0 0;
@@ -184,6 +187,9 @@ button:focus, button:active {
   font-weight: bold;
   color: #000000;
   font-size: 14px; }
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .fixed-navbar-container .nav-link {
+      padding: 0 0.5rem 0.5rem; } }
   .fixed-navbar-container ul {
     margin: 0;
     padding: 10px 0 0;
@@ -908,6 +914,9 @@ b {
     font-size: 16px;
     color: #000000;
     color: #fff; }
+    @media (max-width: 768px) {
+      #testimonial .item {
+        height: 400px; } }
     @media (max-width: 768px) {
       #testimonial .item {
         flex-direction: column;
