@@ -188,21 +188,21 @@
 		<a href="#" data-filter=".exam"> Ôn thi</a>
 	</div>
 	<div class="docs-container">
-		<a href="tailieu/30-kanji-N5.html" class="docs-item thumb" data-image-src="images/thumbs/1.jpg">
+		<a href="tailieu/30-kanji-N5.html" class="docs-item grid-sizer thumb" data-image-src="images/thumbs/1.jpg">
 			<div class="content">
 				<div class="tag">Từ vựng</div>
 				<div class="title">30 Kanji N5</div>
 				<div class="description">Phần này là phần không thể thiếu để giúp các bạn ôn tập khi thi lấy ...</div>
 			</div>
 		</a>
-		<a href="#" class="docs-item-wide grmm thumb" data-image-src="images/thumbs/3.jpg">
+		<a href="#" class="docs-item-wide grid-sizer grmm thumb" data-image-src="images/thumbs/3.jpg">
 			<div class="content">
 				<div class="tag">ngữ pháp</div>
 				<div class="title">30 Kanji N5</div>
 				<div class="description">Phần này là phần không thể thiếu để giúp các bạn ôn tập khi thi lấy ...</div>
 			</div>
 		</a>
-		<a href="#" class="docs-item exam thumb" data-image-src="images/thumbs/2.jpg">
+		<a href="#" class="docs-item grid-sizer exam thumb" data-image-src="images/thumbs/2.jpg">
 			<div class="content">
 				<div class="tag">ôn thi</div>
 				<div class="title">30 Kanji N5</div>
@@ -370,13 +370,16 @@
 	$(window).load(function(){
     var $container = $('.docs-container');
     $container.isotope({
-        filter: '*',
-        animationOptions: {
-            duration: 750,
-            easing: 'linear',
-            queue: false
+		itemSelector: '.thumb',
+		filter: '*',
+        masonry: {
+            isFitWidth: true,
         }
     });
+	$container.isotope({
+		stagger: 30,
+    });
+
  
     $('.nav-filter a').click(function(){
         $('.nav-filter .current').removeClass('current');
