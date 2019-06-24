@@ -2205,7 +2205,7 @@ a:hover{
 				@include font(base);
 				font-weight: 700;
 				font-size: 18px;
-				color: $dark-red;
+				color: $red;
 			}
 			h4{
 				@include font(base);
@@ -2246,7 +2246,7 @@ a:hover{
 				align-items: center;
 				flex-wrap: nowrap;
 				font-size: 16px;
-				color: $dark-red;
+				color: $red;
 				opacity: 0.8;
 				transition: opacity 0.15s ease-in-out;
 				&:hover {
@@ -2465,6 +2465,66 @@ a:hover{
 				opacity: 0.1;
 			}
 }
+.course-item-container{
+	padding-top: 24px;
+	padding-bottom: 60px;
+	margin-bottom: 60px;
+	&:after {
+  		content: '';
+  		display: block;
+  		clear: both;
+	}
+}
+
+.course-item{
+	transition: box-shadow 0.2s ease-in-out, margin 0.2s ease-in-out;
+	border-radius: 3px;
+	min-height: 200px;
+	border: rgba($light-red,0.3) solid 1px; 
+	box-shadow: 0 0px 0px rgba(#000, 0.1), 0 0px 0px rgba(#000, 0.2);
+	background-color: transparent;
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 8px;
+	&:hover {
+		margin: -3px 0 11px 0 ;
+		box-shadow: 0 4px 16px rgba(#000, 0.1), 0 3px 8px rgba(#000, 0.2);
+	}
+	a {
+		text-decoration: none;
+	}
+	.price{
+		color: #fff;
+		h4{
+			@include font(h2);
+			text-align: center;
+		}
+		@include font(h3);
+		width: 100%;
+		font-weight: 500;
+		padding: 16px 0;
+		text-align: center;
+		background-color: $red;
+		&-off{
+			font-size: 16px;
+			text-decoration-line: line-through;
+		}
+		span{
+			font-size: 0.8rem;
+			font-weight: 400;
+		}
+	}
+	.description{
+		padding: 16px 0;
+		text-align: center;
+		font-weight: 400;
+		hr {
+			width: 80%;
+			background-color: rgba($red,0.2);
+		}
+	}
+}
+
 
 
 .course-method{
@@ -2491,7 +2551,7 @@ a:hover{
 	margin: -100px 24px 0;
 	border-radius: 5px 5px 0 0;
 	background-image: linear-gradient(#fff 60%, #fafafa 85%);
-	padding: 24px 8% 120px 7%;
+	padding: 24px 8% 60px 7%;
 	-webkit-box-shadow: 9px -2px 27px -11px rgba(0,0,0,0.37);
 	-moz-box-shadow: 9px -2px 27px -11px rgba(0,0,0,0.37);
 	box-shadow: 9px -2px 27px -11px rgba(0,0,0,0.37);

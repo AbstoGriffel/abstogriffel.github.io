@@ -1971,7 +1971,7 @@ a:hover {
         color: #000000;
         font-weight: 700;
         font-size: 18px;
-        color: #961D1D; }
+        color: #BD2E2E; }
       .cmt-section .comment-content h4 {
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
@@ -2015,7 +2015,7 @@ a:hover {
         align-items: center;
         flex-wrap: nowrap;
         font-size: 16px;
-        color: #961D1D;
+        color: #BD2E2E;
         opacity: 0.8;
         transition: opacity 0.15s ease-in-out; }
         .cmt-section .comment-mark .btn-reply:hover {
@@ -2212,6 +2212,60 @@ a:hover {
     font-size: 30px;
     opacity: 0.1; }
 
+.course-item-container {
+  padding-top: 24px;
+  padding-bottom: 60px;
+  margin-bottom: 60px; }
+  .course-item-container:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.course-item {
+  transition: box-shadow 0.2s ease-in-out, margin 0.2s ease-in-out;
+  border-radius: 3px;
+  min-height: 200px;
+  border: rgba(226, 69, 69, 0.3) solid 1px;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1), 0 0px 0px rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  background-position: center center;
+  background-size: cover;
+  margin-bottom: 8px; }
+  .course-item:hover {
+    margin: -3px 0 11px 0;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1), 0 3px 8px rgba(0, 0, 0, 0.2); }
+  .course-item a {
+    text-decoration: none; }
+  .course-item .price {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 26px;
+    width: 100%;
+    font-weight: 500;
+    padding: 16px 0;
+    text-align: center;
+    background-color: #BD2E2E; }
+    .course-item .price h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+      font-size: 22px;
+      text-align: center; }
+    .course-item .price-off {
+      font-size: 16px;
+      text-decoration-line: line-through; }
+    .course-item .price span {
+      font-size: 0.8rem;
+      font-weight: 400; }
+  .course-item .description {
+    padding: 16px 0;
+    text-align: center;
+    font-weight: 400; }
+    .course-item .description hr {
+      width: 80%;
+      background-color: rgba(189, 46, 46, 0.2); }
+
 .course-method {
   padding: 48px 16px; }
   .course-method h1 {
@@ -2244,7 +2298,7 @@ a:hover {
   margin: -100px 24px 0;
   border-radius: 5px 5px 0 0;
   background-image: linear-gradient(#fff 60%, #fafafa 85%);
-  padding: 24px 8% 120px 7%;
+  padding: 24px 8% 60px 7%;
   -webkit-box-shadow: 9px -2px 27px -11px rgba(0, 0, 0, 0.37);
   -moz-box-shadow: 9px -2px 27px -11px rgba(0, 0, 0, 0.37);
   box-shadow: 9px -2px 27px -11px rgba(0, 0, 0, 0.37); }
