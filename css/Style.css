@@ -1712,13 +1712,23 @@ a:hover {
 .docs-container {
   margin: 0 auto;
   display: flex;
+  width: 1070px;
   align-items: center;
   justify-content: center;
   padding-top: 10px;
   padding-bottom: 30px; }
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     .docs-container {
       width: 210px; } }
+  @media (min-width: 481px) and (max-width: 770px) {
+    .docs-container {
+      width: 430px; } }
+  @media (min-width: 771px) and (max-width: 999px) {
+    .docs-container {
+      width: 645px; } }
+  @media (min-width: 1000px) and (max-width: 1199px) {
+    .docs-container {
+      width: 860px; } }
   .docs-container:after {
     content: '';
     display: block;
@@ -1735,15 +1745,7 @@ a:hover {
   background-position: center center;
   background-size: cover; }
   .docs-item-wide {
-    transition: box-shadow 0.2s ease-in-out, margin 0.2s ease-in-out;
-    border-radius: 3px;
-    margin: 7px;
-    width: 414px;
-    min-height: 280px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1), 0 2px 1px rgba(0, 0, 0, 0.2);
-    background-color: #BD2E2E;
-    background-position: center center;
-    background-size: cover; }
+    width: 414px; }
     @media (max-width: 768px) {
       .docs-item-wide {
         width: 200px; } }

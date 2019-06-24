@@ -1949,11 +1949,21 @@ a:hover{
 
 
 .docs-container{
-	@include mobile{
-		width: 210px;
-	}
+  @media (max-width: 480px) {
+    width: 210px;
+  }
+	@media (min-width: 481px) and (max-width: 770px) {
+    	width: 430px;
+  	}
+	@media (min-width: 771px) and (max-width: 999px) {
+    	width: 645px;
+  	}
+	@media (min-width: 1000px) and (max-width: 1199px) {
+    	width: 860px;
+  	}
 	margin: 0 auto;
 	display: flex;
+	width: 1070px;
 	align-items: center;
 	justify-content: center;
 	padding-top: 10px ;
@@ -1975,15 +1985,7 @@ a:hover{
 	background-position: center center;
 	background-size: cover;
 	&-wide{
-		transition: box-shadow 0.2s ease-in-out, margin 0.2s ease-in-out;
-		border-radius: 3px;
-		margin: 7px;
 		width: 414px;
-		min-height: 280px;
-		box-shadow: 0 2px 5px rgba(#000, 0.1), 0 2px 1px rgba(#000, 0.2);
-		background-color: $red;
-		background-position: center center;
-		background-size: cover;
 		@include mobile{
 			width: 200px;
 		}

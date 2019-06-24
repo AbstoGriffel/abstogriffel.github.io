@@ -195,7 +195,7 @@
 				<div class="description">Phần này là phần không thể thiếu để giúp các bạn ôn tập khi thi lấy ...</div>
 			</div>
 		</a>
-		<a href="#" class="docs-item-wide grid-sizer grmm thumb" data-image-src="images/thumbs/3.jpg">
+		<a href="#" class="docs-item docs-item-wide grid-sizer grmm thumb" data-image-src="images/thumbs/3.jpg">
 			<div class="content">
 				<div class="tag">ngữ pháp</div>
 				<div class="title">30 Kanji N5</div>
@@ -237,14 +237,14 @@
 				<div class="description">Phần này là phần không thể thiếu để giúp các bạn ôn tập khi thi lấy ...</div>
 			</div>
 		</a>
-		<a href="#" class="docs-item-wide exam thumb" data-image-src="images/thumbs/1.jpg">
+		<a href="#" class="docs-item docs-item-wide exam thumb" data-image-src="images/thumbs/1.jpg">
 			<div class="content">
 				<div class="tag">ôn thi</div>
 				<div class="title">30 Kanji N5</div>
 				<div class="description">Phần này là phần không thể thiếu để giúp các bạn ôn tập khi thi lấy ...</div>
 			</div>
 		</a>
-		<a href="#" class="docs-item-wide vocab thumb" data-image-src="images/thumbs/3.jpg">
+		<a href="#" class="docs-item docs-item-wide vocab thumb" data-image-src="images/thumbs/3.jpg">
 			<div class="content">
 				<div class="tag">từ vựng</div>
 				<div class="title">30 Kanji N5</div>
@@ -279,7 +279,7 @@
 				<div class="description">Phần này là phần không thể thiếu để giúp các bạn ôn tập khi thi lấy ...</div>
 			</div>
 		</a>
-		<a href="#" class="docs-item-wide tips thumb" data-image-src="images/thumbs/2.jpg">
+		<a href="#" class="docs-item docs-item-wide tips thumb" data-image-src="images/thumbs/2.jpg">
 			<div class="content">
 				<div class="tag">mẹo</div>
 				<div class="title">30 Kanji N5</div>
@@ -370,10 +370,10 @@
 	$(window).load(function(){
     var $container = $('.docs-container');
     $container.isotope({
-		itemSelector: '.thumb',
+		itemSelector: '.docs-item',
 		filter: '*',
         masonry: {
-            isFitWidth: true,
+            isFitWidth: '.docs-item',
         }
     });
 	$container.isotope({
