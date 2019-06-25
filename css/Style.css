@@ -2380,3 +2380,30 @@ a:hover {
   min-width: 48px; }
   .btn-submit:hover {
     background-color: #E24545; }
+
+/*About Us*/
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  padding-top: 64px;
+  justify-content: center;
+  align-content: center; }
+  .hero-title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 1;
+    text-transform: none;
+    font-weight: 8700;
+    text-align: center; }
+    .hero-title h1 {
+      font-size: 32px; }
+      @media screen and (min-width: 320px) {
+        .hero-title h1 {
+          font-size: calc(32px + 88 * ((100vw - 320px) / 880)); } }
+      @media screen and (min-width: 1200px) {
+        .hero-title h1 {
+          font-size: 120px; } }
+  .hero-title p {
+    width: 60%;
+    align-self: center; }

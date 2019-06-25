@@ -2631,3 +2631,24 @@ a:hover{
 		}
 }
 
+
+
+/*About Us*/
+.hero-title{
+	display: flex;
+	flex-direction: column;
+	padding-top: 64px;
+	justify-content: center;
+	align-content: center;
+	h1{
+		@include font(h1);
+		text-transform: none;
+		@include fluid-type($min_width, $max_width, 32px, 120px);
+		font-weight: 8700;
+		text-align: center;
+	}
+	p {
+		width: 60%;
+		align-self: center;
+	}
+}
