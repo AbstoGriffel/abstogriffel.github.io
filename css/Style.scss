@@ -2466,13 +2466,20 @@ a:hover{
 			}
 }
 .course-item-container{
-	padding-top: 24px;
 	padding-bottom: 60px;
 	margin-bottom: 60px;
 	&:after {
   		content: '';
   		display: block;
   		clear: both;
+	}
+	h1{
+		@include font(h3);
+		color: $red;
+		@include fluid-type($min_width, $max_width, 32px, 50px);
+		text-align: center;
+		padding: 0px 8px 40px;
+
 	}
 }
 
@@ -2485,9 +2492,10 @@ a:hover{
 	background-color: transparent;
 	background-position: center center;
 	background-size: cover;
-	margin-bottom: 8px;
+	margin-bottom: 16px;
+	padding-bottom: 16px;
 	&:hover {
-		margin: -3px 0 11px 0 ;
+		margin: -4px 0 20px 0 ;
 		box-shadow: 0 4px 16px rgba(#000, 0.1), 0 3px 8px rgba(#000, 0.2);
 	}
 	a {
@@ -2496,16 +2504,19 @@ a:hover{
 	.price{
 		color: #fff;
 		h4{
-			@include font(h2);
+			@include font(h3);
 			text-align: center;
+			font-weight: 500;
 		}
-		@include font(h3);
+		border-radius: 3px 3px 0 0;
+		@include font(h2);
 		width: 100%;
-		font-weight: 500;
+		font-size: 22px;
 		padding: 16px 0;
 		text-align: center;
 		background-color: $red;
 		&-off{
+			font-weight: 500;
 			font-size: 16px;
 			text-decoration-line: line-through;
 		}
@@ -2528,7 +2539,7 @@ a:hover{
 
 
 .course-method{
-	padding: 48px 16px;
+	padding: 48px 16px 0px;
 	h1 {
 		@include font(h3);
 		color: $red;
@@ -2540,6 +2551,42 @@ a:hover{
 		@include font(base);
 		font-weight: 300;
 		text-align: center;
+	}
+	&-content{
+		img{
+			margin: 0 auto;
+			border-radius: 3px;
+			resize: 80%;
+			height: 160px;
+		}
+		position: relative;
+		width: 100%;
+		padding: 64px 32px 0px;
+		text-align: center;
+		p{
+			font-weight: 500;
+			@include font(base);
+			font-size: 20px;
+			padding: 24px 8px;
+			text-transform: capitalize;
+		}
+	}
+	.single_counter{
+		padding: 24px 16px 64px;
+		text-align: center;
+		@include font(h3);
+		font-size: 18px;
+		color: rgba(61,61,61,1.00);
+		i {
+			font-size: 30px;
+			padding: 32px 0 12px;
+		}
+		h2 {
+			@include font(h2);
+			font-size: 40px;
+			color: $red;
+		}
+		
 	}
 }
 
@@ -2563,13 +2610,24 @@ a:hover{
 		font-size: 24px;
 		font-weight: 300;
 		padding: 16px 0 8px;
+		text-align: center;
 	}
 	.form-group{
 		margin: 0px;
 		.custom-input{
 			height: 40px;
 		}
+	}
 }
-
+	.btn-submit{
+		margin: 0 auto;
+		background-color: $red;
+		border-radius: 3px;
+		padding: 6px 24px;
+		color: #fff;
+		min-width: 48px;
+		&:hover{
+			background-color: $light-red;
+		}
 }
 
