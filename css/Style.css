@@ -851,6 +851,14 @@ b {
     font-size: 26px;
     text-align: center;
     color: #BD2E2E; }
+    #facilities .title-fluid {
+      font-size: 26px; }
+      @media screen and (min-width: 320px) {
+        #facilities .title-fluid {
+          font-size: calc(26px + 14 * ((100vw - 320px) / 880)); } }
+      @media screen and (min-width: 1200px) {
+        #facilities .title-fluid {
+          font-size: 40px; } }
   #facilities .gallery {
     margin-top: 20px;
     padding-top: 56.78%;
@@ -927,8 +935,16 @@ b {
     font-weight: 700;
     font-size: 26px;
     text-align: center;
-    color: #fff;
+    color: #BD2E2E;
     padding: 40px 0px; }
+    #testimonial .title-fluid {
+      font-size: 26px; }
+      @media screen and (min-width: 320px) {
+        #testimonial .title-fluid {
+          font-size: calc(26px + 14 * ((100vw - 320px) / 880)); } }
+      @media screen and (min-width: 1200px) {
+        #testimonial .title-fluid {
+          font-size: 40px; } }
   #testimonial .owl-stage {
     padding: 30px 0; }
   #testimonial .item {
@@ -940,7 +956,7 @@ b {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #000000;
-    color: #fff; }
+    color: #000; }
     @media (max-width: 768px) {
       #testimonial .item {
         height: 400px; } }
@@ -986,7 +1002,8 @@ b {
   #testimonial .background {
     padding: 20px 0 50px;
     position: relative;
-    background: url(../images/IMGL8777.jpg) no-repeat center center fixed;
+    background-color: #f8eaea;
+    background: url(../images/testimonial.svg) no-repeat center center fixed;
     background-size: cover; }
 
 #footer {
@@ -998,9 +1015,13 @@ b {
   #footer .footer-col {
     display: flex;
     min-height: 200px;
+    max-height: 250px;
     flex-direction: column;
     justify-content: space-between;
     padding: 10px 10px; }
+    @media (max-width: 768px) {
+      #footer .footer-col {
+        max-height: 500px; } }
     #footer .footer-col .img {
       flex-grow: 3; }
     #footer .footer-col h1 {
@@ -2228,13 +2249,13 @@ a:hover {
     text-align: center;
     padding: 0px 8px 40px; }
     .course-item-container h1 {
-      font-size: 32px; }
+      font-size: 26px; }
       @media screen and (min-width: 320px) {
         .course-item-container h1 {
-          font-size: calc(32px + 18 * ((100vw - 320px) / 880)); } }
+          font-size: calc(26px + 14 * ((100vw - 320px) / 880)); } }
       @media screen and (min-width: 1200px) {
         .course-item-container h1 {
-          font-size: 50px; } }
+          font-size: 40px; } }
 
 .course-item {
   transition: box-shadow 0.2s ease-in-out, margin 0.2s ease-in-out;
@@ -2296,13 +2317,13 @@ a:hover {
     text-align: center;
     padding: 8px; }
     .course-method h1 {
-      font-size: 32px; }
+      font-size: 26px; }
       @media screen and (min-width: 320px) {
         .course-method h1 {
-          font-size: calc(32px + 18 * ((100vw - 320px) / 880)); } }
+          font-size: calc(26px + 14 * ((100vw - 320px) / 880)); } }
       @media screen and (min-width: 1200px) {
         .course-method h1 {
-          font-size: 50px; } }
+          font-size: 40px; } }
   .course-method p {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -2384,26 +2405,101 @@ a:hover {
 /*About Us*/
 .hero-title {
   display: flex;
+  position: absolute;
+  z-index: -1;
+  top: 0px;
   flex-direction: column;
-  padding-top: 64px;
+  height: 95vh;
   justify-content: center;
   align-content: center; }
   .hero-title h1 {
+    padding-top: 80px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: 42px;
     line-height: 1;
     text-transform: none;
-    font-weight: 8700;
+    font-weight: 800;
     text-align: center; }
     .hero-title h1 {
-      font-size: 32px; }
+      font-size: 60px; }
       @media screen and (min-width: 320px) {
         .hero-title h1 {
-          font-size: calc(32px + 88 * ((100vw - 320px) / 880)); } }
+          font-size: calc(60px + 60 * ((100vw - 320px) / 880)); } }
       @media screen and (min-width: 1200px) {
         .hero-title h1 {
           font-size: 120px; } }
   .hero-title p {
     width: 60%;
     align-self: center; }
+
+.bg-50 {
+  background-color: rgba(255, 255, 255, 0.7); }
+
+.missions {
+  padding: 64px; }
+  @media (max-width: 768px) {
+    .missions {
+      padding: 0; } }
+  .missions h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 26px;
+    color: #BD2E2E;
+    text-align: center;
+    padding: 8px; }
+    .missions h1 {
+      font-size: 26px; }
+      @media screen and (min-width: 320px) {
+        .missions h1 {
+          font-size: calc(26px + 14 * ((100vw - 320px) / 880)); } }
+      @media screen and (min-width: 1200px) {
+        .missions h1 {
+          font-size: 40px; } }
+  .missions .value {
+    margin-left: 30%;
+    height: 80vh;
+    background-size: contain;
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding: 60px 0px; }
+    .missions .value .stick {
+      min-width: 300px;
+      padding: 32px;
+      border-radius: 3px;
+      background-color: rgba(248, 234, 234, 0.5);
+      position: sticky;
+      width: 40%;
+      top: 24px;
+      margin-left: -40%; }
+      @media (max-width: 768px) {
+        .missions .value .stick {
+          margin: 0; } }
+    .missions .value h2 {
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 26px;
+      color: #BD2E2E;
+      padding: 4px; }
+    .missions .value-sight {
+      background-image: url(../images/sight.svg); }
+    .missions .value-mission {
+      background-image: url(../images/mission.svg);
+      margin-right: 30%;
+      margin-left: auto; }
+      @media (max-width: 768px) {
+        .missions .value-mission {
+          margin-right: 0; } }
+      .missions .value-mission .stick {
+        margin-left: auto;
+        margin-right: -40%; }
+        @media (max-width: 768px) {
+          .missions .value-mission .stick {
+            margin-right: 0; } }
+    .missions .value-core {
+      background-image: url(../images/CoreValue.svg); }
+    @media (max-width: 768px) {
+      .missions .value {
+        margin: 0; } }

@@ -954,6 +954,9 @@ b {
 		@include font(h3);
 		text-align: center;
 		color: $red;
+		&-fluid{
+			@include fluid-type($min_width, $max_width, 26px, 40px);	
+		}
 	}
 	
 	@mixin g-item{
@@ -1022,8 +1025,11 @@ b {
 	.title{
 		@include font(h3);
 		text-align: center;
-		color: #fff;
+		color: $red;
 		padding: 40px 0px;
+		&-fluid{
+			@include fluid-type($min_width, $max_width, 26px, 40px);	
+		}
 	}
 	.owl-stage{
 		padding: 30px 0;
@@ -1038,7 +1044,7 @@ b {
 		align-items: center;
 		margin: 0 auto;
 		@include font(base);
-		color: #fff;
+		color: #000;
 		@include mobile{
 			flex-direction: column;
 			align-items: center;
@@ -1085,7 +1091,8 @@ b {
 	.background {
 		padding: 20px 0 50px;
 		position: relative;
-		background: url(../images/IMGL8777.jpg) no-repeat center center fixed;
+		background-color: $light-red-2;
+		background: url(../images/testimonial.svg) no-repeat center center fixed;
 		background-size: cover;
 	}
 }
@@ -1099,6 +1106,10 @@ b {
 	.footer-col{
 		display: flex;
 		min-height: 200px;
+		max-height: 250px;
+		@include mobile{
+			max-height: 500px;
+		}
 		flex-direction: column;
 		justify-content: space-between;
 		padding: 10px 10px;
@@ -2476,7 +2487,7 @@ a:hover{
 	h1{
 		@include font(h3);
 		color: $red;
-		@include fluid-type($min_width, $max_width, 32px, 50px);
+		@include fluid-type($min_width, $max_width, 26px, 40px);
 		text-align: center;
 		padding: 0px 8px 40px;
 
@@ -2543,7 +2554,7 @@ a:hover{
 	h1 {
 		@include font(h3);
 		color: $red;
-		@include fluid-type($min_width, $max_width, 32px, 50px);
+		@include fluid-type($min_width, $max_width, 26px, 40px);
 		text-align: center;
 		padding: 8px;
 	}
@@ -2636,19 +2647,87 @@ a:hover{
 /*About Us*/
 .hero-title{
 	display: flex;
+	position: absolute;
+	z-index: -1;
+	top: 0px;
 	flex-direction: column;
-	padding-top: 64px;
+	height: 95vh;
 	justify-content: center;
 	align-content: center;
 	h1{
+		padding-top: 80px;
 		@include font(h1);
 		text-transform: none;
-		@include fluid-type($min_width, $max_width, 32px, 120px);
-		font-weight: 8700;
+		@include fluid-type($min_width, $max_width, 60px, 120px);
+		font-weight: 800;
 		text-align: center;
 	}
 	p {
 		width: 60%;
 		align-self: center;
+	}
+}
+
+.bg-50{
+	background-color: rgba(255,255,255,0.70);
+}
+
+.missions{
+	padding: 64px;
+	@include mobile{
+		padding: 0;
+	}
+	h1{
+		@include font(h3);
+		color: $red;
+		@include fluid-type($min_width, $max_width, 26px, 40px);
+		text-align: center;
+		padding: 8px;
+	}
+	.value {
+		margin-left: 30%;
+		height: 80vh;
+		background-size: contain;
+		background-position: right center;
+		background-repeat: no-repeat;
+		.stick{
+			min-width: 300px;
+			padding: 32px;
+			border-radius: 3px;
+			background-color: rgba($light-red-2,0.5);
+			position: sticky;
+			width: 40%;
+			top: 24px;
+			margin-left: -40%;
+			@include mobile{
+				margin: 0;
+			}
+		}
+		h2 {
+			@include font(h3);
+			color: $red;
+			padding: 4px;
+		}
+		padding: 60px 0px;
+		&-sight{
+			background-image: url(../images/sight.svg);
+		}
+		&-mission{
+			background-image: url(../images/mission.svg);
+			margin-right: 30%;
+			margin-left: auto;
+			@include mobile{margin-right: 0;}
+			.stick{
+				margin-left: auto;
+				margin-right: -40%;
+				@include mobile{margin-right: 0;}
+			}
+		}
+		&-core{
+			background-image: url(../images/CoreValue.svg);
+		}
+		@include mobile{
+			margin: 0;
+		}
 	}
 }
