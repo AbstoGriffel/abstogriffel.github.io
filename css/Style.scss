@@ -1708,7 +1708,7 @@ a:hover{
 
 /*----------Activities Style-OG component*/
 
-.hero-title{
+.activities-title{
 		text-align: center;
 		padding-bottom: 100px;
 		h1 {
@@ -2646,16 +2646,18 @@ a:hover{
 
 /*About Us*/
 .hero-title{
+	color: rgba(#000,0.7);
 	display: flex;
 	position: absolute;
 	z-index: -1;
 	top: 0px;
 	flex-direction: column;
 	height: 95vh;
+	text-align: center;
 	justify-content: center;
 	align-content: center;
 	h1{
-		padding-top: 80px;
+		padding-top: 64px;
 		@include font(h1);
 		text-transform: none;
 		@include fluid-type($min_width, $max_width, 60px, 120px);
@@ -2663,6 +2665,8 @@ a:hover{
 		text-align: center;
 	}
 	p {
+		padding-top:16px;
+		@include fluid-type($min_width, $max_width, 16px, 18px); 
 		width: 60%;
 		align-self: center;
 	}
