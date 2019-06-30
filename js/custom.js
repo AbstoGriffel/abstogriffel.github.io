@@ -91,17 +91,17 @@ function changeBG() {
 		$("#slider-active").removeClass("a1").addClass("a3");
 		$("#slider-in").removeClass("b1").addClass("b3");
 		$("#slider-out").removeClass("b2").addClass("b1");
-		$("#d-title").text("dễ nhớ");
+		$("#d-title").text("dễ hiểu");
 	} else if ($("#slider-active").hasClass("a2")) {
 		$("#slider-active").removeClass("a2").addClass("a1");
 		$("#slider-in").removeClass("b2").addClass("b1");
 		$("#slider-out").removeClass("b3").addClass("b2");
-		$("#d-title").text("dễ hiểu");
+		$("#d-title").text("dễ học");
 	} else {
 		$("#slider-active").removeClass("a3").addClass("a2");
 		$("#slider-in").removeClass("b3").addClass("b2");
 		$("#slider-out").removeClass("b1").addClass("b3");
-		$("#d-title").text("dễ học");
+		$("#d-title").text("dễ nhớ");
 	}
 }
 

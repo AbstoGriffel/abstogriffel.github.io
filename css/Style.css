@@ -608,22 +608,22 @@ b {
     .slider-button a {
       color: #ffffff; }
   .slider .a1 {
-    background: url(../images/slider1.png) no-repeat center center;
+    background: url(../images/slider/de_hoc.svg) no-repeat center center;
     background-size: cover; }
   .slider .a2 {
-    background: url(../images/slider2.png) no-repeat center center;
+    background: url(../images/slider/de_nho.svg) no-repeat center center;
     background-size: cover; }
   .slider .a3 {
-    background: url(../images/slider3.png) no-repeat center center;
+    background: url(../images/slider/de_hieu.svg) no-repeat center center;
     background-size: cover; }
   .slider .b1 {
-    background: url(../images/bslider1.png) no-repeat center center;
+    background: url(../images/slider/de_nho_gray.svg) no-repeat center center;
     background-size: cover; }
   .slider .b2 {
-    background: url(../images/bslider2.png) no-repeat center center;
+    background: url(../images/slider/de_hieu_gray.svg) no-repeat center center;
     background-size: cover; }
   .slider .b3 {
-    background: url(../images/bslider3.png) no-repeat center center;
+    background: url(../images/slider/de_hoc_gray.svg) no-repeat center center;
     background-size: cover; }
 
 /*2. Content*/
@@ -1498,12 +1498,19 @@ a:hover {
   padding-bottom: 100px; }
   .activities-title h1 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: 42px;
-    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 26px;
     padding-bottom: 20px;
-    color: #BD2E2E;
-    font-size: 46px; }
+    color: #BD2E2E; }
+    .activities-title h1 {
+      font-size: 26px; }
+      @media screen and (min-width: 320px) {
+        .activities-title h1 {
+          font-size: calc(26px + 14 * ((100vw - 320px) / 880)); } }
+      @media screen and (min-width: 1200px) {
+        .activities-title h1 {
+          font-size: 40px; } }
   .activities-title p {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
@@ -1803,7 +1810,7 @@ h2.title {
     text-decoration: none; }
 
 .content {
-  background-color: rgba(189, 46, 46, 0.5);
+  background-color: rgba(150, 29, 29, 0.8);
   min-height: 280px;
   width: 100%;
   border-radius: 3px;
@@ -1814,7 +1821,14 @@ h2.title {
   flex-direction: column;
   align-content: center;
   justify-content: space-between;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  -webkit-transition: background-color .2s linear;
+  -moz-transition: background-color .2s linear;
+  -o-transition: background-color .2s linear;
+  -ms-transition: background-color .2s linear;
+  transition: background-color .2s linear; }
+  .content:hover {
+    background-color: rgba(189, 46, 46, 0.2); }
   .content .tag {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -2191,10 +2205,9 @@ h2.title {
   position: relative;
   max-width: 800px;
   margin: auto;
-  background: #fff;
-  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  background-color: rgba(248, 234, 234, 0.7);
   padding: 25px;
-  border-radius: 25px;
+  border-radius: 3px;
   height: 400px;
   transition: all .3s; }
   @media screen and (max-width: 992px) {
@@ -2256,8 +2269,8 @@ h2.title {
     flex-shrink: 0;
     height: 300px;
     background-color: #E24545;
-    box-shadow: 4px 13px 30px 1px rgba(34, 35, 58, 0.2);
-    border-radius: 20px;
+    box-shadow: 11px 12px 23px -10px rgba(34, 35, 58, 0.2);
+    border-radius: 3px;
     transform: translateX(-80px);
     overflow: hidden; }
     .blog-slider__img:after {
@@ -2275,7 +2288,7 @@ h2.title {
       object-fit: cover;
       display: block;
       opacity: 0;
-      border-radius: 20px;
+      border-radius: 3px;
       transition: all .3s; }
     @media screen and (max-width: 768px) {
       .blog-slider__img {
@@ -2303,14 +2316,23 @@ h2.title {
       transition: all .4s; }
   .blog-slider__code {
     color: #7b7992;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
     display: block;
     font-weight: 500; }
+  .blog-slider__tag {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #BD2E2E;
+    display: block; }
   .blog-slider__title {
     font-size: 24px;
     font-weight: 700;
     color: #0d0925;
-    margin-bottom: 20px; }
+    margin-bottom: 16px;
+    text-transform: uppercase; }
   .blog-slider__text {
     color: #4e4a67;
     margin-bottom: 30px;
@@ -2321,7 +2343,6 @@ h2.title {
     padding: 15px 35px;
     border-radius: 3px;
     color: #fff;
-    box-shadow: 0px 14px 80px rgba(252, 56, 56, 0.4);
     text-decoration: none;
     font-weight: 500;
     justify-content: center;
@@ -2334,6 +2355,9 @@ h2.title {
         .blog-slider__button:hover a {
           color: #fff;
           background-color: #E24545; } }
+    .blog-slider__button__button:hover a {
+      color: #fff;
+      background-color: #E24545; }
   .blog-slider .swiper-container-horizontal > .swiper-pagination-bullets, .blog-slider .swiper-pagination-custom, .blog-slider .swiper-pagination-fraction {
     bottom: 10px;
     left: 0;
@@ -2440,7 +2464,8 @@ h2.title {
     font-size: 26px;
     text-transform: uppercase; }
   .course-content-info p {
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    margin-bottom: 8px; }
   .course-content-info hr {
     padding: 0px 0px 0px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -2734,7 +2759,7 @@ h2.title {
       color: #BD2E2E;
       padding: 4px; }
     .missions .value-sight {
-      background-image: url(../images/sight.svg); }
+      background-image: url(../images/vision.svg); }
     .missions .value-mission {
       background-image: url(../images/mission.svg);
       margin-right: 30%;
