@@ -22,6 +22,7 @@
 <link rel="stylesheet" type="text/css" href="css/hover-min.css"/>
 <link rel="stylesheet" type="text/css" href="css/magnific-popup.min.css"/>
 <link rel="stylesheet" type="text/css" href="css/component.css"/>
+<link rel="stylesheet" type="text/css" href="css/success.css"/>
 <link rel="stylesheet" type="text/css" href="css/Style.scss"/>
 <link rel="stylesheet" type="text/css" href="css/Style.css"/>
 <link rel="stylesheet" type="text/css" href="css/all.min.css"/>
@@ -35,7 +36,7 @@
 </div></div>
 <main class="hide">
 <!--Navbar-->
-<!----Normal-nav: Display on 1200+, section 1-->
+<!--Normal-nav: Display on 1200+, section 1-->
 <div id="unfixed-menu" class="container">
 	<div class="navbar-container">
 		<a href="#" class="nav-logo"><img src="images/KOI-JLC-04.png" class="img-fluid logo"></a>
@@ -69,7 +70,7 @@
 			</li>
 		</ul>
 		<button type="button" class="ripple nav-language" ><a href="#"><i class="fas fa-globe-americas"></i> En</a></button>
-		<button type="button" class="ripple nav-cta "><a href="#">liên hệ&nbsp;&nbsp;&nbsp;<i class="fas fa-phone"></a></i></button>
+		<button type="button" class="ripple nav-cta"><a href="#">liên hệ&nbsp;&nbsp;&nbsp;<i class="fas fa-phone"></i></a></button>
 	</div>
 </div>
 <!----Fixed-nav: Display on 768+, fixed on all section-->
@@ -107,7 +108,7 @@
 		</ul>
 		<div class="padding"></div>
 		<button type="button" class="ripple nav-language" ><a href="#"><i class="fas fa-globe-americas"></i> En</a></button>
-		<button type="button" class="ripple nav-cta "><a href="#">liên hệ&nbsp;&nbsp;&nbsp;<i class="fas fa-phone"></a></i></button>
+		<button type="button" class="ripple nav-cta"><a href="#">liên hệ&nbsp;&nbsp;&nbsp;<i class="fas fa-phone"></a></i></button>
 	</div>
 </div></div>
 <!----Mobile-menu-->
@@ -134,7 +135,6 @@
     </ul>
   </div>
 </nav>
-
 <!--Title-slider-->
 <!--<div class="background">
 	<img src="images/hero-bg-01.png" class="img-fluid" alt="">
@@ -157,7 +157,7 @@
 		<div id="slider-contet" class="slider-content fadeInRight animated delay-3s">
 			<div class="slider-content-p">KOI cung cấp hệ thống kiến thức đầy đủ và toàn diện: dễ học, dễ hiểu, dễ nhớ. Phù hợp cho mọi lứa tuổi muốn tìm hiểu và học tiếng Nhật.</div>
 			<div id="slider-button" class="slider-button ripple fadeInRight animated delay-3s">
-				<p><a href="#">đăng kí học</a></p>
+				<p><a href="#courses">đăng kí học</a></p>
 			</div>
 		</div>
 		<div class="clearfix"></div>
@@ -197,7 +197,7 @@
 					  <option value="4">Cao cấp</option>
 				</select></div>
 		</div>
-		<button class="btn-cta hvr-bounce-to-right  wow fadeInUp" data-wow-delay="0.3s" style="width: 240px;"><a class="" href="#">Nhận tư vấn</a></button>
+		<button class="btn-cta hvr-bounce-to-right  wow fadeInUp" data-wow-delay="0.3s" style="width: 240px;" onClick="document.getElementById('enroll').scrollIntoView();"><a class="" href="#enroll">Nhận tư vấn</a></button>
 	</div>
 	</div>
 </section>
@@ -306,10 +306,34 @@
 					  <option value="3">Lớp chiều</option>
 					  <option value="4">Lớp tối</option>
 				</select></div>
-				<a  href="#"><button class="ripple btn-cta wow fadeInRight" data-wow-delay="0.4s">ĐĂNG KÍ</button></a>
+				<button class="ripple btn-cta wow fadeInRight js-open btn-open is-active" data-wow-delay="0.4s">ĐĂNG KÍ</button>
 			</div>
 		</div>
 	</div></div>
+	<!--Modal-->
+<div class="wrap">
+  <div class="modal js-modal">
+   <div class="modal-holder ">
+    <div class="modal-image ">
+      <div class="success-checkmark">
+  <div class="check-icon">
+    <span class="icon-line line-tip"></span>
+    <span class="icon-line line-long"></span>
+    <div class="icon-circle"></div>
+    <div class="icon-fix"></div>
+  </div>
+</div>
+    </div>
+    <h1>Hoàn tất!</h1>
+    <p>
+     Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.
+	 </p>
+   
+    <button class="js-close">Đóng</button>
+  </div>
+  </div>
+</div>
+
 </section>
 <!--Facilities-->
 <section id="facilities" class="container">
@@ -382,7 +406,7 @@
 			</div>
 			<div class="col-lg-4 col-sm-6 footer-col">
 				<h2>Liên hệ</h2>
-				<p>Email: contact@akira.edu.vn</p>
+				<p>Email: contact@koi.edu.vn</p>
 				<p>Học Online: 0932.15.8366 </p>
 				<p>Tuyển dụng: 0938.02.8366</p>
 				<p>Học tại trung tâm: 0938.01.8366</p>
@@ -401,7 +425,8 @@
 <script type="text/javascript" src="js/magnific-popup.min.js"></script>
 <script type="text/javascript" src="js/grid.js"></script>
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
-<script type="text/javascript" src="js/custom.js"></script><script>new WOW().init();
-              </script>
+<script type="text/javascript" src="js/dynamic.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script>new WOW().init();</script>
 </body>
 </html>

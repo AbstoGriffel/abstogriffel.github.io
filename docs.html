@@ -23,6 +23,7 @@
     <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css" />
     <link rel="stylesheet" type="text/css" href="css/Style.scss" />
     <link rel="stylesheet" type="text/css" href="css/Style.css" />
+    <link rel="stylesheet" type="text/css" href="css/success.css"/>
     <link rel="stylesheet" type="text/css" href="css/all.min.css" />
     <script src="js/modernizr.custom.js"></script>
 </head>
@@ -32,7 +33,30 @@
 <div class='scrolltop'>
     <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
 </div>
-<!----Normal-nav: Display on 1200+, section 1-->
+<!--Modal-->
+<div class="wrap">
+  <div class="modal js-modal">
+   <div class="modal-holder ">
+    <div class="modal-image ">
+      <div class="success-checkmark">
+  <div class="check-icon">
+    <span class="icon-line line-tip"></span>
+    <span class="icon-line line-long"></span>
+    <div class="icon-circle"></div>
+    <div class="icon-fix"></div>
+  </div>
+</div>
+    </div>
+    <h1>Hoàn tất!</h1>
+    <p>
+     Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.
+	 </p>
+   
+    <button class="js-close">Đóng</button>
+  </div>
+  </div>
+</div>
+<!--Normal-nav: Display on 1200+, section 1-->
 <div id="unfixed-menu" class="container">
     <div class="navbar-container">
         <a href="#" class="nav-logo">
@@ -74,12 +98,7 @@
                 <i class="fas fa-globe-americas"></i> En
             </a>
         </button>
-        <button type="button" class="ripple nav-cta ">
-            <a href="#">liên hệ&nbsp;&nbsp;&nbsp;
-					<i class="fas fa-phone"></i>
-			</a>
-        </button>
-    </div>
+<button type="button" class="ripple nav-cta"><a href="#">liên hệ&nbsp;&nbsp;&nbsp;<i class="fas fa-phone"></i></a></button></div>
 </div>
 <!----Fixed-nav: Display on 768+, fixed on all section-->
 <div id="fixed-menu" class="nav-up">
@@ -389,9 +408,7 @@
                             <option value="4">Lớp tối</option>
                         </select>
                     </div>
-                    <a href="#">
-                        <button class="ripple btn-cta fadeInRight">ĐĂNG KÍ</button>
-                    </a>
+                    <button class="ripple btn-cta wow fadeInRight js-open btn-open is-active" data-wow-delay="0.4s">ĐĂNG KÍ</button>
                 </div>
             </div>
         </div>
@@ -410,7 +427,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 footer-col">
                 <h2>Liên hệ</h2>
-                <p>Email: contact@akira.edu.vn</p>
+                <p>Email: contact@koi.edu.vn</p>
                 <p>Học Online: 0932.15.8366 </p>
                 <p>Tuyển dụng: 0938.02.8366</p>
                 <p>Học tại trung tâm: 0938.01.8366</p>
@@ -427,6 +444,7 @@
 <script type="text/javascript" src="js/wow.min.js"></script>
 <script src="js/swiper.min.js"></script>
 <script src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/dynamic.js"></script>
 <script src="js/custom.js"></script>
 <script>
 	$(window).load(function(){

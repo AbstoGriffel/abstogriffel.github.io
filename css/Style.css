@@ -9,6 +9,9 @@ body {
   font-size: 16px;
   color: #000000; }
 
+html {
+  scroll-behavior: smooth; }
+
 section {
   padding: 60px 0;
   margin: 60px 0; }
@@ -2621,9 +2624,9 @@ h2.title {
     font-size: 26px;
     font-size: 18px;
     color: #3d3d3d; }
-    .course-method .single_counter i {
-      font-size: 30px;
-      padding: 32px 0 12px; }
+    .course-method .single_counter img {
+      padding: 32px 0 12px;
+      opacity: 0.8; }
     .course-method .single_counter h2 {
       font-family: 'Montserrat', sans-serif;
       font-weight: 800;
@@ -2778,3 +2781,60 @@ h2.title {
     @media (max-width: 768px) {
       .missions .value {
         margin: 0; } }
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; }
+
+.wrap {
+  margin: auto; }
+  .wrap h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: .5em; }
+  .wrap p {
+    margin-bottom: 2em;
+    color: #666;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #000000; }
+    .wrap p span {
+      padding: 16px 0px; }
+      .wrap p span b {
+        font-weight: 700; }
+
+.modal {
+  background-color: rgba(226, 69, 69, 0.7);
+  padding: 2em 3em;
+  text-align: center;
+  border-radius: .5em;
+  display: none; }
+  .modal.is-active {
+    display: block; }
+  @media (max-width: 768px) {
+    .modal {
+      padding: 0; } }
+
+.modal-holder {
+  width: 300px;
+  min-height: 300px;
+  padding: 2em 3em;
+  margin: 0 auto;
+  margin-top: 10vh;
+  background-color: #fff; }
+
+.js-close {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background-color: #bd2e2e;
+  color: #fff !important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  padding: 8px 16px; }
+
+.modal-image {
+  margin: 0 auto;
+  margin-bottom: 2em;
+  color: #BD2E2E; }
