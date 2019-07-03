@@ -2621,6 +2621,10 @@ h2.title{
 		@include font(h3);
 		font-size: 18px;
 		color: rgba(61,61,61,1.00);
+		i {
+			font-size: 30px;
+      		padding: 32px 0 12px;
+		}
 		img {
 			padding: 32px 0 12px;
 			opacity: 0.8;
